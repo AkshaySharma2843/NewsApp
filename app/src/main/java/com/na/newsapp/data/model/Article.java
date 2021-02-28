@@ -6,10 +6,11 @@ import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.na.newsapp.util.TableConstants;
 
 import java.io.Serializable;
 
-@Entity(tableName = "NEWS_ARTICLE_TABLE")
+@Entity(tableName = TableConstants.ARTICLE_TABLE)
 public class Article  implements Serializable {
 
     @PrimaryKey(autoGenerate = true)

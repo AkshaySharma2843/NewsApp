@@ -7,6 +7,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import com.na.newsapp.data.model.Article;
+import com.na.newsapp.util.TableConstants;
 
 import java.util.List;
 
@@ -19,6 +20,6 @@ public interface NewsDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void addAllArticles(List<Article> articleList);
 
-    @Query("SELECT * FROM NEWS_ARTICLE_TABLE")
+    @Query("SELECT * FROM " + TableConstants.ARTICLE_TABLE)
      List<Article> getAllNewsData();
 }

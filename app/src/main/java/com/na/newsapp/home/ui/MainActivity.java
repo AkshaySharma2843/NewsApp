@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements PostClickListener
         initViewModel();
         initView();
         getNews();
+
     }
 
     private void initViewModel() {
